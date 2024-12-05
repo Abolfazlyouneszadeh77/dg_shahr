@@ -1,0 +1,131 @@
+#content>#flagShips{
+    height: 328px;
+    background: rgb(237, 243, 253);
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+#content>#flagShips>#flagSliderBox{
+    /* border: 1px solid #ccc; */
+    border-radius: 20px;
+    width: 1250px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(150, 150, 150, 0.1);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#content>#flagShips>#flagSliderBox>#bigButton{
+    border-radius: 20px;
+    background: url("../images/flagshipSlider/poster.webp") no-repeat;
+    background-size: 100% 100%;
+    width: 240px;
+    height: 380px;
+}
+#content>#flagShips>#flagSliderBox>#fsliderBox{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 370px;
+    width: 960px;
+    position: relative;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+#content>#flagShips>#flagSliderBox>#fsliderBox>#fSliderGal{
+    border: 1px solid blue;
+    border-radius: 10px;
+    height: 360px;
+    width: 300%;
+    position: relative;
+    transition: 0.5s;
+
+}
+#content>#flagShips>#flagSliderBox>#fsliderBox>#fSliderGal>.flagItems{
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 220px;
+    height: 100%;
+    margin-left: 15px;
+    padding: 0 5px 0;
+    float: right;
+}
+#content>#flagShips>#flagSliderBox>#fsliderBox>#fSliderGal>.flagItems>.status{height: 30px;}
+#content>#flagShips>#flagSliderBox>#fsliderBox>#fSliderGal>.flagItems>.jadid{
+    border-bottom: 2px solid rgb(0 93 94);
+    background: url("../images/icons/jadid.PNG") 98% no-repeat;
+    background-size: 25% 80%;
+}
+#content>#flagShips>#flagSliderBox>#fsliderBox>#fSliderGal>.flagItems>.jashnvare{
+    border-bottom: 2px solid rgb(167 5 16);
+    background: url("../images/icons/jashnvare.PNG") 98% no-repeat;
+    background-size: 35% 80%;
+}
+#content>#flagShips>#flagSliderBox>#fsliderBox>#fSliderGal>.flagItems>img{
+    width: 65%;
+    display: block;
+    margin: 20px auto;
+}
+#content>#flagShips>#flagSliderBox>#fsliderBox>#fSliderGal>.flagItems>.description{
+    font-size: 14px;
+    font-weight: 300;
+}
+#content>#flagShips>#flagSliderBox>#fsliderBox>#fSliderGal>.flagItems>.price{
+    direction: ltr;
+    margin: 30px 10px 0;
+    font-size: 13px;
+}
+#content>#flagShips>#flagSliderBox>#fsliderBox>#fSliderGal>.flagItems>.off{
+    direction: ltr;
+    margin: 10px 10px 0;
+}
+#content>#flagShips>#flagSliderBox>#fsliderBox>#fSliderGal>.flagItems>.off>.darsad{
+    font-size: 12px;
+    color: #fff;
+    background: red;
+    border-radius: 10px;
+    padding: 3px 8px 2px;
+    
+
+}
+#content>#flagShips>#flagSliderBox>#fsliderBox>#fSliderGal>.flagItems>.off>.lastPrice{
+    font-size: 11px;
+    color: #858585;
+    text-decoration: line-through;
+    text-decoration-color: #000;
+}
+
+#content>#flagShips>#flagSliderBox>#fsliderBox:hover>#fLeft{
+    left: 50px;
+    transition: 0.5s;
+}
+#content>#flagShips>#flagSliderBox>#fsliderBox>#fLeft{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: url("../images/icons/left.png") hsl(213, 100%, 98%) 50% no-repeat;
+    background-size: 50% 60%;
+    position: absolute;
+    left: -50px;
+    top: 160px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#content>#flagShips>#flagSliderBox>#fsliderBox:hover>#fRight{
+    right: 50px;
+    transition: 0.5s;
+}
+#content>#flagShips>#flagSliderBox>#fsliderBox>#fRight{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: url("../images/icons/right.png") hsl(213, 100%, 98%) 50% no-repeat;
+    background-size: 50% 60%;
+    position: absolute;
+    right: -50px;
+    top: 160px;
+    cursor: pointer;
+    transition: 0.5s;
+}

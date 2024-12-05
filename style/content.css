@@ -1,0 +1,84 @@
+#content{
+    height: 3000px; /*ارتفاع کانتنت در نهایت میتونه حذف بشه*/
+    font-family: vazirmatn;
+}
+
+#content>#landCategory{
+    margin: 20px auto 60px;
+    width: 1250px;
+    height: 130px;
+}
+#content>#landCategory>ul{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+#content>#landCategory>ul>li{
+    width: 10%;
+    height: 100%;
+    list-style: none;
+    font-family: vazirmatn;
+    font-size: 14px;
+    text-align: center;
+    color: blue;
+}
+#content>#landCategory>ul>li>img{
+    width: 100%;
+    height: 100%;
+}
+
+#content>#banerVam{
+    width: 1250px;
+    height: 270px;
+    margin: auto;
+    background: url(../images/f33LCjM.webp) no-repeat;
+    background-size: contain;
+}
+#content>#emptySpace{
+    height: 150px;
+}
+/* --------------------------------------------------------------- */
+#content>#famusBrands{
+    direction: ltr;
+    width: 800px;
+    height: 370px;
+    text-align: center;
+    margin: auto;
+    line-height: 700%;
+    font-weight: 500;
+    color: blue;
+    border: 1px solid red;
+    
+}
+#content>#famusBrands>div{
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+}
+#content>#famusBrands>div>.brands{
+    width: 180px;
+    height: 185px;
+}
+#content>#famusBrands>div>.brands>p{
+    position: relative;
+    top: 110px;
+}
+#content>#famusBrands>div>#appleBrand{
+    background: url("../images/apple.webp") 50% 0% no-repeat;
+    background-size: 100% 90%;
+    line-height: 700%;
+}
+#content>#famusBrands>div>#samsungBrand{
+    background: url("../images/samsung.webp") 50% 0% no-repeat;
+    background-size: 100% 87%;
+    line-height: 700%;
+}
+#content>#famusBrands>div>#xiaumiBrand{
+    background: url("../images/xiaumi.webp") 50% 0% no-repeat;
+    background-size: 105% 90%;
+    line-height: 700%;
+}
+/* ------------------------------------------------------------------ */

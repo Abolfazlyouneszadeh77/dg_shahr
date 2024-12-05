@@ -1,0 +1,44 @@
+
+
+@media screen and (max-width: 1250px) {
+    #header>#top>.search{
+        border: 1px solid red;
+        width: 600px;
+    }
+    #header>#top>.search>input{
+        width: 90%;
+    }
+    #header>#bottom>.categoryBox>ul>#beauty{
+        display: none;
+    }
+    #header>#bottom>.categoryBox>ul>#wear{
+        display: none;
+    }
+}
+@media screen and (max-width: 1025px) {
+    #header>#top>.search{
+        width: 30%;
+    }
+    #header>#top>.search>input{
+        width: 90%;
+    }
+    #header>#bottom>.categoryBox>ul>#motor{
+        display: none;
+    }
+    #header>#bottom>.categoryBox>ul>#kitchen{
+        display: none;
+    }
+}
+@media screen and (max-width: 765px) {
+    
+    #header>#top>.search{
+        width: 30%;
+        margin-top: 120px;
+    }
+    #header>#bottom>.categoryBox{
+        display: none;
+    }
+    #header>#bottom>.darkhasteVam{
+        display: none;
+    }
+}

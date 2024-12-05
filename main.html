@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/headerRes.css">
+    <link rel="stylesheet" href="style/content.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/bigSlider.css">
+    <link rel="stylesheet" href="style/flagshipSlider.css">
+
+    <link rel="stylesheet" href="fonts/vazirMatn/Vazirmatn-font-face.css">
+
+	<script src="script/slider.js">   </script>
+
+    <title>dg-shahr</title>
+</head>
+<body>
+    <div id="header">
+        <div id="top">
+            <div class="logo"></div>
+            <div class="search">
+                <input type="text" placeholder="جستجو..." id="search">
+            </div>
+            <div class="signupLogin">ثبت نام | ورود</div>
+            <div class="sabad"></div>
+        </div>
+        <div id="bottom">
+            <div class="categoryBox">
+                <div id="categoryButton" class="categoryButton">دسته بندی کالاها</div>
+                <ul>
+                    <li id="mob">گوشی موبایل</li>
+                    <li id="digi">کالای دیجیتال</li>
+                    <li id="elec">لوازم خانگی برقی</li>
+                    <li id="kitchen">خانه و آشپزخانه</li>
+                    <li id="motor">موتورسیکلت و لوازم جانبی خودرو</li>
+                    <li id="wear">مد و پوشاک</li>
+                    <li id="beauty">زیبایی و سلامت</li>
+
+                </ul>
+            </div>
+            <div id="darkhasteVam" class="darkhasteVam">درخواست وام</div>
+        </div>
+    </div>
+    <div id="content">
+        <div id="bigSlider">
+            <div id="bigGal">
+                <div class="bigItems"><img src="images/slider/_7EIm4M.webp" alt=""></div>
+                <div class="bigItems"><img src="images/slider/_DhIm4M.webp" alt=""></div>
+                <div class="bigItems"><img src="images/slider/d!JkRjM.webp" alt=""></div>
+                <div class="bigItems"><img src="images/slider/hKvAwgM.webp" alt=""></div>
+                <div class="bigItems"><img src="images/slider/YYJatjM.webp" alt=""></div>
+            </div>
+            <div id="leftButton"></div>
+            <div id="rightButton"></div>
+
+            <ul id="miniButtons">
+                <li class="choosed" onclick="changeAll(0)"></li>
+                <li onclick="changeAll(1)"></li>
+                <li onclick="changeAll(2)"></li>
+                <li onclick="changeAll(3)"></li>
+                <li onclick="changeAll(4)"></li>
+            </ul>
+        </div>
+        <div id="landCategory">
+            <ul>
+                <li id="mobile"><img src="images/categories/موبایل.webp" alt="">موبایل</li>
+                <li id="zivar"><img src="images/categories/زیورآلات.webp" alt="">زیورآلات</li>
+                <li id="digital"><img src="images/categories/کالای دیجیتال.webp" alt="">کالای دیجیتال</li>
+                <li id="wear"><img src="images/categories/پوشاک.webp" alt="">مد و پوشاک</li>
+                <li id="motorsicle"><img src="images/categories/موتورسیکلت.webp" alt="">موتورسیکلت</li>
+                <li id="lavazem"><img src="images/categories/لوازم خانگی.webp" alt="">لوازم خانگی</li>
+                <li id="abzar"><img src="images/categories/ابزار.webp" alt="">ابزار و تجهیزات</li>
+                <li id="varzeshi"><img src="images/categories/ورزشی.webp" alt="">ورزش و سفر</li>
+                <li id="arayeshi"><img src="images/categories/آرایشی.webp" alt="">زیبایی و مراقبت</li>
+            </ul>
+        </div>
+        <div id="flagShips">
+            <div id="flagSliderBox">
+                <div id="bigButton"></div>
+                <div id="fsliderBox">
+                    <div id="fSliderGal">
+                        <div id="flagItems" class="flagItems">
+                            <div class="status jadid jashnvare"></div>
+                            <img src="images/flagshipSlider/galaxy-ZFlip6.png" alt="">
+                            <p class="description">گوشی موبایل سامسونگ مدل Galaxy-ZFlip6 - یک سیم کارت</p>
+                            <p class="price">تومان 68,990,000</p>
+                            <div class="off">
+                                <span class="darsad">20%</span>
+                                <span class="lastPrice">69,390,000</span>
+                            </div>
+                        </div>
+                        <div id="flagItems" class="flagItems">
+                            <div class="status jadid"></div>
+                            <img src="" alt="">
+                        </div>
+                        <div id="flagItems" class="flagItems"></div>
+                        <div id="flagItems" class="flagItems"></div>
+                        <div id="flagItems" class="flagItems"></div>
+                        <div id="flagItems" class="flagItems"></div>
+                        <div id="flagItems" class="flagItems"></div>
+                        <div id="flagItems" class="flagItems"></div>
+
+                    </div>
+                    <div id="fLeft"></div>
+                    <div id="fRight"></div>
+                </div>
+            </div>
+        </div>
+        <div id="emptySpace"></div>
+        <div id="banerVam"></div>
+        <div id="famusBrands">برندهای محبوب گوشی موبایل
+            <div>
+                <div id="appleBrand" class="brands">
+                    <p>اپل</p>
+                </div>
+                <div id="samsungBrand" class="brands">
+                    <p>سامسونگ</p>
+                </div>
+                <div id="xiaumiBrand" class="brands">
+                    <p>شیاومی</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer"></div>
+
+<script>
+
+    // big slider------------------------
+    pos=0
+    const miniButtons = document.querySelectorAll("#bigSlider > #miniButtons > li");
+    function changeAll(num){
+        move(num);
+        changeTab(num);
+    }
+
+    function move(x){
+        pos = -100 * x;
+        bigGal.style.right= pos + "%";
+    }
+
+    function changeTab(x){
+        for(i = 0; i < miniButtons.length; i++){
+            miniButtons[i].className = "";
+        }
+        miniButtons[x].className = "choosed";
+    }
+
+    leftButton.onclick = function(){
+        if(pos > -400){
+        pos = pos - 100;
+        bigGal.style.right= pos + "%";
+        }else if(pos == -400){
+            pos=0;
+            bigGal.style.right= pos + "%";
+        }
+        let tabNumber= pos / -100;
+        changeTab(tabNumber);
+    }
+
+    rightButton.onclick = function(){
+        if(pos < 0){
+            pos = pos + 100;
+            bigGal.style.right= pos + "%";
+        }
+        tabNumber= pos / -100;
+        changeTab(tabNumber);
+    }
+// ---------------------------------------
+// -----------flagship slider-------------
+    fPos=0;
+    fLeft.onclick= ()=>{
+        // alert("...")
+        if(fPos > -300){
+            fPos = fPos - 100;
+            fSliderGal.style.right= fPos + "%";
+        }
+    }
+    fRight.onclick= ()=>{
+        if(fPos < 0){
+            fPos = fPos + 100;
+            fSliderGal.style.right= fPos + "%";
+        }
+    }
+
+</script>
+</body>
+</html>
