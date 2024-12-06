@@ -1,0 +1,95 @@
+#content>.miniscroller{
+    /* border: 1px solid red; */
+    width: 1250px;
+    height: 450px;
+    margin: auto;
+}
+#content>.miniscroller>#boxName{
+    /* border: 1px solid #ccc; */
+    height: 90px;
+    width: 100%;
+    position: relative;
+
+}
+#content>.miniscroller>#boxName>.title{
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    font-size: 18px;
+    padding: 0 10px 0;
+    border-right: 3px solid rgb(0, 182, 121);
+}
+#content>.miniscroller>#boxName>.more{
+    position: absolute;
+    left: 0;
+    color: blue;
+    bottom: 0px;
+    font-size: 15px;
+    padding: 0 10px 0;
+}
+#content>.miniscroller>#productions{
+    /* border: 1px solid #ccc; */
+    width: 100%;
+    height: 360px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+#content>.miniscroller>#productions>.scrollGalery{
+    border: 1px solid blue;
+    width: 2000px;
+    height: 99%;
+}
+#content>.miniscroller>#productions>.scrollGalery>.scrollItems{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 220px;
+    height: 100%;
+    margin-left: 15px;
+    padding: 0 5px 0;
+    float: right;
+
+}
+#content>.miniscroller>#productions>.scrollGalery>.scrollItems>.status{height: 30px;}
+#content>.miniscroller>#productions>.scrollGalery>.scrollItems>.jadid{
+    border-bottom: 2px solid rgb(0 93 94);
+    background: url("../images/icons/jadid.PNG") 98% no-repeat;
+    background-size: 25% 80%;
+}
+#content>.miniscroller>#productions>.scrollGalery>.scrollItems>.jashnvare{
+    border-bottom: 2px solid rgb(167 5 16);
+    background: url("../images/icons/jashnvare.PNG") 98% no-repeat;
+    background-size: 35% 80%;
+}
+#content>.miniscroller>#productions>.scrollGalery>.scrollItems>img{
+    width: 65%;
+    display: block;
+    margin: 20px auto;
+}
+#content>.miniscroller>#productions>.scrollGalery>.scrollItems>.description{
+    font-size: 14px;
+    font-weight: 300;
+}
+#content>.miniscroller>#productions>.scrollGalery>.scrollItems>.price{
+    direction: ltr;
+    margin: 30px 10px 0;
+    font-size: 13px;
+}
+
+#content>.miniscroller>#productions>.scrollGalery>.scrollItems>.off{
+    direction: ltr;
+    margin: 10px 10px 0;
+}
+#content>.miniscroller>#productions>.scrollGalery>.scrollItems>.off>.darsad{
+    font-size: 12px;
+    color: #fff;
+    background: red;
+    border-radius: 10px;
+    padding: 3px 8px 2px;
+}
+#content>.miniscroller>#productions>.scrollGalery>.scrollItems>.off>.lastPrice{
+    font-size: 11px;
+    color: #858585;
+    text-decoration: line-through;
+    text-decoration-color: #000;
+}
+
