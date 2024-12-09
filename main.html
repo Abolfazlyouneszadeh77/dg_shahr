@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/bigSlider.css">
     <link rel="stylesheet" href="style/flagshipMiniSlider.css">
     <link rel="stylesheet" href="style/MiniScroller.css">
+    <link rel="stylesheet" href="style/productionPage.css">
 
 
     <link rel="stylesheet" href="fonts/vazirMatn/Vazirmatn-font-face.css">
@@ -20,32 +21,35 @@
 </head>
 <body>
     <div id="header">
-        <div id="top">
-            <div class="logo"></div>
-            <div class="search">
-                <input type="text" placeholder="جستجو..." id="search">
+        <div id="mainHead" class="mainHead">
+            <div id="top" class="top">
+                <div class="logo"></div>
+                <div class="search">
+                    <input type="text" placeholder="جستجو..." id="search">
+                </div>
+                <div class="signupLogin">ثبت نام | ورود</div>
+                <div class="sabad"></div>
             </div>
-            <div class="signupLogin">ثبت نام | ورود</div>
-            <div class="sabad"></div>
-        </div>
-        <div id="bottom">
-            <div class="categoryBox">
-                <div id="categoryButton" class="categoryButton">دسته بندی کالاها</div>
-                <ul>
-                    <li id="mob">گوشی موبایل</li>
-                    <li id="digi">کالای دیجیتال</li>
-                    <li id="elec">لوازم خانگی برقی</li>
-                    <li id="kitchen">خانه و آشپزخانه</li>
-                    <li id="motor">موتورسیکلت و لوازم جانبی خودرو</li>
-                    <li id="wear">مد و پوشاک</li>
-                    <li id="beauty">زیبایی و سلامت</li>
+            <div id="bottom">
+                <div class="categoryBox">
+                    <div id="categoryButton" class="categoryButton">دسته بندی کالاها</div>
+                    <ul>
+                        <li id="mob">گوشی موبایل</li>
+                        <li id="digi">کالای دیجیتال</li>
+                        <li id="elec">لوازم خانگی برقی</li>
+                        <li id="kitchen">خانه و آشپزخانه</li>
+                        <li id="motor">موتورسیکلت و لوازم جانبی خودرو</li>
+                        <li id="wear">مد و پوشاک</li>
+                        <li id="beauty">زیبایی و سلامت</li>
 
-                </ul>
+                    </ul>
+                </div>
+                <div id="darkhasteVam" class="darkhasteVam">درخواست وام</div>
             </div>
-            <div id="darkhasteVam" class="darkhasteVam">درخواست وام</div>
         </div>
+
     </div>
-    <div id="content">
+    <div id="content" class="hide">
         <div id="bigSlider">
             <div id="bigGal">
                 <div class="bigItems"><img src="images/slider/_7EIm4M.webp" alt=""></div>
@@ -189,10 +193,15 @@
         </div>
 
     </div>
-
+    <!-- -------------production-page------------------->
+    <div id="mahsool" class="show">
+        <div id="proPicture" class="proPicture"></div>
+        <div id="proInformation" class="proInformation"></div>
+        <div id="mainPrice" class="mainPrice"></div>
+    </div>
 
     <div id="footer">
-        <div id="top">
+        <div id="footerTop">
             <div class="logo"></div>
             <div class="calling">
                 <span><img src="images/icons/instagram.PNG" alt=""></span>
@@ -200,7 +209,7 @@
                 <p>تلفن پشتیبانی<span>02191001022</span></p>
             </div>
         </div>
-        <div id="bottom">
+        <div id="footerBottom">
             <div class="information">
                 <ul>با دیجی شهر
                     <li>درباره ما</li>
@@ -231,6 +240,16 @@
     </div>
 
 <script>
+    window.onscroll= function(){
+        if(window.pageYOffset > 10){
+            // alert("...")
+            mainHead.className= "mainHead fix";
+
+        }else{
+            mainHead.className= "mainHead";
+
+        }
+    }
 
     // big slider------------------------
     pos=0

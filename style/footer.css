@@ -3,7 +3,7 @@
     background: rgb(248 250 252);
     height: 450px;
 }
-#footer>#top{
+#footer>#footerTop{
     border-bottom: 1px solid #ccc;
     width: 1250px;
     height: 100px;
@@ -13,64 +13,64 @@
     align-items: center;
     gap: 800px;
 }
-#footer>#top>.logo{
+#footer>#footerTop>.logo{
     width: 110px;
     height: 100%;
     background: url("../images/logo.PNG") 50% no-repeat;
     background-size: contain;
 }
-#footer>#top>.calling{
+#footer>#footerTop>.calling{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
-#footer>#top>.calling>span{
+#footer>#footerTop>.calling>span{
     width: 30px;
     height: 30px;
 }
-#footer>#top>.calling>span>img{
+#footer>#footerTop>.calling>span>img{
     width: 100%;
     height: 100%;
 }
-#footer>#top>.calling>p{
+#footer>#footerTop>.calling>p{
     font-size: 14px;
     color: rgb(51 65 85);
 }
-#footer>#top>.calling>p>span{
+#footer>#footerTop>.calling>p>span{
     font-size: 16px;
     margin-right: 10px;
 }
 
-#footer>#bottom{
+#footer>#footerBottom{
     height: 340px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 400px;
 }
-#footer>#bottom>.information{
+#footer>#footerBottom>.information{
     display: flex;
     justify-content: center;
     gap: 50px;
 }
-#footer>#bottom>.information>ul{
+#footer>#footerBottom>.information>ul{
     color: rgb(51 65 85);
     list-style: none;
     font-weight: 400;
 }
-#footer>#bottom>.information>ul>li{
+#footer>#footerBottom>.information>ul>li{
     color: rgb(100 116 139);
     line-height: 40px;
 }
 
-#footer>#bottom>.confirmation{
+#footer>#footerBottom>.confirmation{
     height: 100px;
     display: flex;
     justify-content: center;
     gap: 50px;
 }
-#footer>#bottom>.confirmation>img{
+#footer>#footerBottom>.confirmation>img{
     width: 100%;
     height: 100%;
 }

@@ -3,30 +3,30 @@ body{
     direction: rtl;
 }
 #header{
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     width: 100%;
     height: 130px;
     position: relative;
     z-index: 20;
 }
-#header>#top{
+#header>.mainHead>#top{
     height: 65px;
     display: flex;
     justify-content: center ;
     align-items: center;
     gap: 20px;
 }
-#header>#top>.logo{
+#header>.mainHead>#top>.logo{
     height: 40px;
     width: 150px;
     background: url(../images/Capture.PNG) 98% 50% no-repeat;
     background-size: contain;
 }
 
-#header>#top>.search{
+#header>.mainHead>#top>.search{
     width: 60%;
 }
-#header>#top>.search>input{
+#header>.mainHead>#top>.search>input{
     width: 90%;
     border: 0 none;
     outline: 0 none;
@@ -38,11 +38,11 @@ body{
     background: url("../images/icons/search.PNG") rgba(245,246,248,1) 98% 50% no-repeat;
     background-size: 25px;
 }
-#header>#top>.search>input::placeholder{
+#header>.mainHead>#top>.search>input::placeholder{
     opacity: 0.7;
 }
 
-#header>#top>.signupLogin{
+#header>.mainHead>#top>.signupLogin{
     border: 1px solid rgb(158 214 217);
 	border-radius:8px;
 	background:url(../images/icons/profile.PNG) no-repeat 90% 50%;
@@ -56,7 +56,7 @@ body{
 	line-height:40px;
 }
 
-#header>#top>.sabad{
+#header>.mainHead>#top>.sabad{
     border: 1px solid #ccc;
     border-radius: 8px;
     width: 42px;
@@ -66,7 +66,7 @@ body{
 }
 
 
-#header>#bottom{
+#header>.mainHead>#bottom{
     height: 61px;
     display: flex;
     justify-content: center ;
@@ -74,13 +74,13 @@ body{
     gap: 15px;
 
 }
-#header>#bottom>.categoryBox{
+#header>.mainHead>#bottom>.categoryBox{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 }
-#header>#bottom>.categoryBox>.categoryButton{
+#header>.mainHead>#bottom>.categoryBox>.categoryButton{
     width: 160px;
     height: 45px;
     background: url("../images/icons/category.PNG") #f5fafa 90% 50% no-repeat;
@@ -95,7 +95,7 @@ body{
     align-content: center;
 }
 
-#header>#bottom>.categoryBox>ul{
+#header>.mainHead>#bottom>.categoryBox>ul{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -109,7 +109,7 @@ body{
     margin-right: 20px;
 }
 
-#header>#bottom>.darkhasteVam{
+#header>.mainHead>#bottom>.darkhasteVam{
     width: 110px;
     height: 30px;
     border-radius: 20px;
@@ -121,4 +121,15 @@ body{
     text-align: center;
     align-content: center;
     margin: 15px 0;
+}
+/* ------------scroll------------- */
+#header>.fix{
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    top: 0;
+    z-index: 100;
+}
+#header>.fix>#bottom{
+    display: none;
 }
